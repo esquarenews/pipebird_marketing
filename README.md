@@ -16,6 +16,13 @@ bin/dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Run on port 3001
+```bash
+bin/rails server -p 3001
+```
+
+Open [http://localhost:3001](http://localhost:3001).
+
 ## Run tests
 ```bash
 bin/rails test

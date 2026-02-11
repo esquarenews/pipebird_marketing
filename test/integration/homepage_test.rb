@@ -5,12 +5,15 @@ class HomepageTest < ActionDispatch::IntegrationTest
     get root_path
 
     assert_response :success
-    assert_select "h1", "Ship customer data once. Pipebird keeps every tool in lockstep."
+    assert_select "h1", /Pipebird keeps your platforms and app synced\./
     assert_select ".logo-strip span", minimum: 6
     assert_select "a", text: "Book a demo"
-    assert_select "a", text: "Request early access"
+    assert_select "a[href^='mailto:contact@pipebird.io']"
     assert_select "img.brand-logo"
     assert_select "img.cta-logo"
+    assert_select "link[rel='manifest'][href='/site.webmanifest']"
+    assert_select "link[rel='icon'][href='/favicon.ico']"
+    assert_select "link[rel='apple-touch-icon'][href='/apple-touch-icon.png']"
   end
 
   test "homepage renders crm integration detail sections" do

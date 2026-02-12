@@ -1,0 +1,101 @@
+<% content_for :title, "Pipebird.io | CRM Integration" %>
+<% content_for :head do %>
+  <meta name="description" content="CRM integration with placeholder implementation detail and architecture examples for pipebird.io." />
+<% end %>
+
+<main class="use-case-page">
+  <header class="hero">
+    <%= render "site_nav", current_page: :crm_integration %>
+
+    <div class="hero-content">
+      <p class="eyebrow">Use Case</p>
+      <h1>CRM integration that keeps sales, product, and support perfectly aligned.</h1>
+      <p class="hero-copy">
+        Placeholder implementation details for CRM integration flows. Use this page to define exact sources,
+        mapping rules, and target objects before launch.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:contact@pipebird.io">Book a demo</a>
+        <a class="button secondary" href="/contact-us">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section split overview">
+    <div class="section-copy">
+      <p class="eyebrow">Architecture</p>
+      <h2>Move updates from app events to CRM fields in near real time.</h2>
+      <p>
+        Placeholder architecture copy: source systems, event bus, transformation rules, and destination write
+        strategy can be detailed here with implementation notes.
+      </p>
+    </div>
+    <div class="data-panel">
+      <h3>Typical sync pattern</h3>
+      <ul>
+        <li>Source events: product + support + billing</li>
+        <li>Transformation: identity match + field mapping placeholder</li>
+        <li>Destination: contact, account, opportunity objects</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section detail-stack">
+    <div class="section-copy">
+      <p class="eyebrow">What teams get</p>
+      <h2>Benefits for GTM and operations</h2>
+      <ul class="bullet-list">
+        <li>Placeholder lead qualification and routing logic.</li>
+        <li>Placeholder account health fields synced from product activity.</li>
+        <li>Placeholder support escalation cues pushed into CRM timelines.</li>
+      </ul>
+    </div>
+    <div class="section-copy">
+      <p class="eyebrow">Implementation blocks</p>
+      <div class="feature-grid">
+        <article>
+          <h3>Field mapping templates</h3>
+          <p>Placeholder schema mappings for contact, account, and custom objects.</p>
+        </article>
+        <article>
+          <h3>Conflict handling</h3>
+          <p>Placeholder precedence rules for two-way writes and update ordering.</p>
+        </article>
+        <article>
+          <h3>Validation layer</h3>
+          <p>Placeholder data quality checks before writeback operations run.</p>
+        </article>
+        <article>
+          <h3>Audit + replay</h3>
+          <p>Placeholder event tracing and replay controls for operational support.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section">
+    <p class="eyebrow">FAQs</p>
+    <h2>CRM integration planning questions</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>Which CRM platforms are covered?</summary>
+        <p>Placeholder platform matrix to be finalized for launch.</p>
+      </details>
+      <details>
+        <summary>How long does rollout take?</summary>
+        <p>Placeholder timeline based on object count, source count, and validation needs.</p>
+      </details>
+      <details>
+        <summary>Can we support custom objects?</summary>
+        <p>Yes, this section will include final scope and constraints as placeholders are replaced.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section callout">
+    <p class="eyebrow">Ready to scope your flow?</p>
+    <h2>Share your CRM object model and we will map a rollout plan.</h2>
+    <p>All values on this page are placeholders and can be replaced with final implementation detail.</p>
+    <a class="button primary" href="/contact-us">Start planning</a>
+  </section>
+</main>

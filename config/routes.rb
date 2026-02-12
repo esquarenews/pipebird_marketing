@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   root "pages#home"
+  get "pricing" => "pages#pricing"
+  get "crm-integration" => "pages#crm_integration"
+  get "heroku-connect-migration" => "pages#heroku_connect_migration"
+  get "contact-us" => "pages#contact_us"
 end

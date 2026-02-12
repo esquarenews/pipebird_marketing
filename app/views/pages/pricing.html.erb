@@ -1,0 +1,141 @@
+<% content_for :title, "Pipebird.io | Pricing" %>
+<% content_for :head do %>
+  <meta name="description" content="Pipebird pricing plans for CRM and data sync. Placeholder pricing and package details for launch planning." />
+<% end %>
+
+<main class="pricing-page" data-controller="billing-switcher" data-billing-switcher-default-period-value="monthly">
+  <header class="hero pricing-hero">
+    <%= render "site_nav", current_page: :pricing %>
+
+    <div class="hero-content pricing-headline">
+      <p class="eyebrow">Pricing</p>
+      <h1>Choose the plan that matches your integration volume.</h1>
+      <p class="hero-copy">
+        Placeholder plan structure for now. Final pricing, limits, and entitlements can be updated before launch.
+      </p>
+      <div class="billing-toggle" role="group" aria-label="Billing period">
+        <button type="button" class="is-active" data-billing-period="monthly" data-billing-switcher-target="button" data-action="billing-switcher#switch" aria-pressed="true">Monthly</button>
+        <button type="button" data-billing-period="annual" data-billing-switcher-target="button" data-action="billing-switcher#switch" aria-pressed="false">Annual (save placeholder %)</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section pricing-grid" aria-label="Pricing plans">
+    <article class="plan-card">
+      <p class="plan-name">Starter</p>
+      <h2><span data-billing-switcher-target="value" data-monthly="$XX/mo" data-annual="$XXX/yr">$XX/mo</span></h2>
+      <p class="plan-copy">For teams launching first production syncs.</p>
+      <ul>
+        <li>Placeholder connectors: 3</li>
+        <li>Placeholder synced records: 100K/mo</li>
+        <li>Email support</li>
+        <li>Basic workflow automation</li>
+      </ul>
+      <a class="button secondary" href="mailto:contact@pipebird.io">Start trial</a>
+    </article>
+
+    <article class="plan-card featured">
+      <p class="plan-name">Growth</p>
+      <h2><span data-billing-switcher-target="value" data-monthly="$XXX/mo" data-annual="$X,XXX/yr">$XXX/mo</span></h2>
+      <p class="plan-badge">Most popular</p>
+      <p class="plan-copy">For revenue teams scaling multi-system orchestration.</p>
+      <ul>
+        <li>Placeholder connectors: 12</li>
+        <li>Placeholder synced records: 2M/mo</li>
+        <li>Priority support + Slack channel</li>
+        <li>Advanced workflow automation</li>
+      </ul>
+      <a class="button primary" href="mailto:contact@pipebird.io">Book a demo</a>
+    </article>
+
+    <article class="plan-card">
+      <p class="plan-name">Enterprise</p>
+      <h2><span data-billing-switcher-target="value" data-monthly="Custom" data-annual="Custom annual">Custom</span></h2>
+      <p class="plan-copy">For high-scale and regulated deployment needs.</p>
+      <ul>
+        <li>Unlimited placeholder connectors</li>
+        <li>Custom placeholder record volume</li>
+        <li>Dedicated onboarding team</li>
+        <li>Security and compliance add-ons</li>
+      </ul>
+      <a class="button secondary" href="mailto:contact@pipebird.io">Talk to sales</a>
+    </article>
+  </section>
+
+  <section class="section pricing-table-wrap">
+    <p class="eyebrow">Plan comparison</p>
+    <h2>Feature comparison (placeholder detail)</h2>
+    <div class="pricing-table-scroller">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Starter</th>
+            <th>Growth</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Price</td>
+            <td><span data-billing-switcher-target="value" data-monthly="$XX/mo" data-annual="$XXX/yr">$XX/mo</span></td>
+            <td><span data-billing-switcher-target="value" data-monthly="$XXX/mo" data-annual="$X,XXX/yr">$XXX/mo</span></td>
+            <td><span data-billing-switcher-target="value" data-monthly="Custom" data-annual="Custom annual">Custom</span></td>
+          </tr>
+          <tr>
+            <td>Connector library</td>
+            <td>Core set</td>
+            <td>Extended set</td>
+            <td>Full + custom</td>
+          </tr>
+          <tr>
+            <td>Two-way sync cadence</td>
+            <td>Near real-time</td>
+            <td>Near real-time</td>
+            <td>Near real-time + custom SLA</td>
+          </tr>
+          <tr>
+            <td>Workflow automations</td>
+            <td>Basic</td>
+            <td>Advanced</td>
+            <td>Advanced + custom logic</td>
+          </tr>
+          <tr>
+            <td>Support model</td>
+            <td>Email</td>
+            <td>Priority email + chat</td>
+            <td>Dedicated TAM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section faq-section pricing-faq">
+    <p class="eyebrow">Pricing FAQs</p>
+    <h2>Common questions before purchasing</h2>
+    <div class="faq-list">
+      <details open>
+        <summary>Can we start with placeholders and finalize later?</summary>
+        <p>Yes. Plan details here are placeholders and can be finalized before your contract starts.</p>
+      </details>
+      <details>
+        <summary>Do you offer migration support from existing connectors?</summary>
+        <p>Yes. We provide migration assistance and rollout planning as part of onboarding.</p>
+      </details>
+      <details>
+        <summary>Is there a discount for annual billing?</summary>
+        <p>Placeholder annual discount terms are available and can be customized by contract length.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section callout pricing-callout">
+    <p class="eyebrow">Need a custom package?</p>
+    <h2>We can tailor pricing to your data model, volume, and security requirements.</h2>
+    <p>
+      Share your target systems and estimated sync volume. We will map a rollout and provide final pricing.
+    </p>
+    <a class="button primary" href="mailto:contact@pipebird.io">Request pricing review</a>
+  </section>
+</main>

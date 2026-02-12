@@ -8,12 +8,19 @@ class HomepageTest < ActionDispatch::IntegrationTest
     assert_select "h1", /Pipebird keeps your platforms and app synced\./
     assert_select ".logo-strip span", minimum: 6
     assert_select "a", text: "Book a demo"
+    assert_select "a", text: "Get started"
+    assert_select "a[href='/']", text: "Home"
+    assert_select "a[href='/crm-integration']", text: "CRM Integration"
+    assert_select "a[href='/heroku-connect-migration']", text: "Heroku Connect Migration"
+    assert_select "a[href='/pricing']", text: "Pricing"
+    assert_select "a[href='/contact-us']", text: "Contact Us"
     assert_select "a[href^='mailto:contact@pipebird.io']"
     assert_select "img.brand-logo"
     assert_select "img.cta-logo"
     assert_select "link[rel='manifest'][href='/site.webmanifest']"
     assert_select "link[rel='icon'][href='/favicon.ico']"
     assert_select "link[rel='apple-touch-icon'][href='/apple-touch-icon.png']"
+    assert_match(/@hotwired\/turbo-rails/, @response.body)
   end
 
   test "homepage renders crm integration detail sections" do

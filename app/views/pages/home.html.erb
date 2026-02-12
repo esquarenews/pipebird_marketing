@@ -5,18 +5,7 @@
 
 <main class="landing-page">
   <header class="hero">
-    <nav class="top-nav">
-      <a class="brand" href="/">
-        <%= image_tag "pipebird-logo.png", alt: "pipebird.io", class: "brand-logo" %>
-      </a>
-      <div class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#scenarios">Scenarios</a>
-        <a href="#faqs">FAQs</a>
-      </div>
-      <a class="nav-cta" href="#cta">Book a demo</a>
-    </nav>
+    <%= render "site_nav", current_page: :home %>
 
     <div class="hero-content">
       <p class="eyebrow">CRM integration, without the duct tape.</p>
@@ -26,8 +15,8 @@
         Pipebird turns broken handoffs into perfect sync across platforms.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href="#cta">Book a Demo</a>
-        <a class="button secondary" href="#benefits">Get Started Now</a>
+        <a class="button primary" href="#cta">Book a demo</a>
+        <a class="button secondary" href="/contact-us">Get started</a>
       </div>
     </div>
 

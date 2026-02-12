@@ -1,0 +1,57 @@
+<% content_for :title, "Pipebird.io | Contact Us" %>
+<% content_for :head do %>
+  <meta name="description" content="Contact the Pipebird team to get started with CRM integration and migration planning." />
+<% end %>
+
+<main class="contact-page">
+  <header class="hero">
+    <%= render "site_nav", current_page: :contact_us %>
+
+    <div class="hero-content">
+      <p class="eyebrow">Contact Us</p>
+      <h1>Tell us what you need to sync, and we will map a rollout plan.</h1>
+      <p class="hero-copy">
+        Share your systems, volume, and timeline. This form is placeholder-only for now and can be wired to your
+        preferred intake workflow later.
+      </p>
+    </div>
+  </header>
+
+  <section class="section contact-grid">
+    <article class="contact-panel">
+      <h2>Start with a project brief</h2>
+      <p>Placeholder contact flow. Replace with your CRM form endpoint when ready.</p>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="full-name">Full name</label>
+        <input id="full-name" type="text" name="full_name" placeholder="Jane Smith" />
+
+        <label for="work-email">Work email</label>
+        <input id="work-email" type="email" name="work_email" placeholder="jane@company.com" />
+
+        <label for="company-name">Company</label>
+        <input id="company-name" type="text" name="company_name" placeholder="Placeholder Co." />
+
+        <label for="notes">Project details</label>
+        <textarea id="notes" name="notes" rows="6" placeholder="Describe systems, expected volume, and timeline."></textarea>
+
+        <div class="contact-actions">
+          <button type="button" class="button primary">Submit placeholder brief</button>
+          <a class="button secondary" href="mailto:contact@pipebird.io">Email us directly</a>
+        </div>
+      </form>
+    </article>
+
+    <article class="contact-panel">
+      <h2>What to include</h2>
+      <ul class="bullet-list">
+        <li>Source and destination systems (CRM, product DB, support tools).</li>
+        <li>Approximate object/record volume and update frequency.</li>
+        <li>Any migration deadline (e.g., Heroku Connect replacement).</li>
+      </ul>
+      <h3>Direct contact</h3>
+      <p><a href="mailto:contact@pipebird.io">contact@pipebird.io</a></p>
+      <p>Response SLA placeholder: same business day.</p>
+    </article>
+  </section>
+</main>

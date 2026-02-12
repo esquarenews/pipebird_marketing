@@ -1,0 +1,18 @@
+<nav class="top-nav">
+  <a class="brand" href="/">
+    <%= image_tag "pipebird-logo.png", alt: "pipebird.io", class: "brand-logo" %>
+  </a>
+
+  <div class="nav-links">
+    <%= link_to "Home", "/", aria: (current_page == :home ? { current: "page" } : {}) %>
+    <%= link_to "CRM Integration", "/crm-integration", aria: (current_page == :crm_integration ? { current: "page" } : {}) %>
+    <%= link_to "Heroku Connect Migration", "/heroku-connect-migration", aria: (current_page == :heroku_connect_migration ? { current: "page" } : {}) %>
+    <%= link_to "Pricing", "/pricing", aria: (current_page == :pricing ? { current: "page" } : {}) %>
+    <%= link_to "Contact Us", "/contact-us", aria: (current_page == :contact_us ? { current: "page" } : {}) %>
+  </div>
+
+  <div class="nav-actions">
+    <a class="button primary nav-button" href="mailto:contact@pipebird.io">Book a demo</a>
+    <a class="button secondary nav-button" href="/contact-us">Get started</a>
+  </div>
+</nav>
